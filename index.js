@@ -22,15 +22,15 @@ function exactMatch(driver,object1){
   })
 }
 
-function exactMatchToList(driver,object1){
-  const driver1= driver.filter(function(d)
-    for (const key in object1){
-      return d[key] === object1[key];
-  }
-})
+function exactMatchToList(driver, object1){
+const driver1= driver.filter(function(d){
+    for(const key in object1){
+    return d[key] === object1[key];
+      }
+    })
 return driver1.map(function(d){
-  for (const key in object1){
-    return d["name"];
-  }
-})
+    for(const key in object1){
+      return d["name"];
+    }
+  })
 }
